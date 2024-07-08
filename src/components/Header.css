@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  }
+
+.step {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.step-icon {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.step.completed .step-icon {
+  background-color: green;
+}
+
+.step-title {
+  text-align: center;
+}

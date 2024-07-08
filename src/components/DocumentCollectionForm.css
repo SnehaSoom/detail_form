@@ -1,0 +1,84 @@
+.document-collection-form-container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.document-collection-form {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.document-collection-form h3 {
+  margin-top: 0;
+}
+
+.document-collection-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.document-collection-form .file-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.document-collection-form .file-input-wrapper:hover {
+  background-color: #f0f0f0;
+}
+
+.document-collection-form .file-input-wrapper input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.document-collection-form .file-input-wrapper .attach-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.document-collection-form .file-input-wrapper span {
+  font-size: 14px;
+  color: #888;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+}
+
+.next-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #0056b3;
+}
