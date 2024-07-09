@@ -1,25 +1,39 @@
 .app {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  padding-top: 20px;
+  /* height: 100vh; */
+  /* overflow-y: hidden; */
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .main-content {
   display: flex;
+  height: 80vh;
+  /* border: 1px solid gray; */
 }
 
 .left-panel {
   width: 30%;
   padding-right: 20px;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 .right-panel {
   width: 70%;
+  background-color: #f0f0f0;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  /* height: inherit; */
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 form {

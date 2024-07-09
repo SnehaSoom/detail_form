@@ -1,9 +1,10 @@
 .footer {
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: white;
   border-top: 1px solid #ddd;
+  /* margin-top: 50px; */
 }
 
 .next-button {
@@ -13,6 +14,7 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .next-button:hover {
