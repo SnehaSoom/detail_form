@@ -80,11 +80,7 @@ function InterviewAvailability() {
   };
 
   return (
-    <div className="container">
-      <h1>Name of the Enquiry Form</h1>
-      <p>One line description of the form</p>
-      <p>Provide the following information to process your application</p>
-
+    <div className="interview-container">
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">1. Email*</label>
@@ -94,6 +90,7 @@ function InterviewAvailability() {
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             required
+            placeholder="Example - userid@gmail.com"
           />
           <span className="error">{emailError}</span>
         </div>
@@ -106,6 +103,7 @@ function InterviewAvailability() {
             value={location}
             onChange={(event) => setLocation(event.target.value)}
             required
+            placeholder="Search or enter your location "
           />
           <span className="error">{locationError}</span>
         </div>
@@ -141,8 +139,9 @@ function InterviewAvailability() {
             value={timezone}
             onChange={(event) => setTimezone(event.target.value)}
             required
+            placeholder="Search or Select a time zone from below "
           >
-            <option value="">Select a time zone</option>
+            <option value="">Search or Select a time zone from below </option>
             <option value="GMT">GMT</option>
             <option value="EST">EST</option>
             <option value="PST">PST</option>
@@ -159,8 +158,9 @@ function InterviewAvailability() {
             value={medium}
             onChange={(event) => setMedium(event.target.value)}
             required
+            placeholder="Search or Select medium of Interview from below"
           >
-            <option value="">Select a medium</option>
+            <option value="">Search or Select medium of Interview from below</option>
             <option value="Phone">Phone</option>
             <option value="Video Call">Video Call</option>
             <option value="In-Person">In-Person</option>

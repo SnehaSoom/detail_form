@@ -1,0 +1,32 @@
+.form-preview {
+  background-color: white;
+  /* padding: 20px; */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 84%;
+  /* border: 2px solid red; */
+  /* min-height: 90%;
+  max-height: fit-content; */
+  height: fit-content;
+  /* overflow-y: auto; */
+}
+
+.formPreview-title h3 {
+  line-height: 0px;
+}
+
+.formPreview-title span {
+  margin-top: -2px;
+  line-height: 0px;
+  font-size: 14px;
+}
+
+.formPreview-title p {
+ color: gray;
+}
+
+.formPreview-title{
+  padding: 30px 30px 20px 40px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #1A8FE64D;
+}

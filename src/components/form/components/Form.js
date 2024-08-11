@@ -5,7 +5,7 @@ import {
   setEmail,
   setDob,
   setContact,
-} from "../features/form/formSlice";
+} from "../../../features/form/formSlice";
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -24,16 +24,16 @@ const Form = () => {
     <>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Name*</label>
+          <label>1. Name*</label>
           <input
             type="text"
             value={form.name}
             onChange={(e) => dispatch(setName(e.target.value))}
-            placeholder="Enter your name"
+            placeholder="Enter a Valid Salary in numbers e.g 50,000/-"
           />
         </div>
         <div>
-          <label>Email*</label>
+          <label>2. Email*</label>
           <input
             type="email"
             value={form.email}
@@ -42,7 +42,7 @@ const Form = () => {
           />
         </div>
         <div>
-          <label>Date of Birth</label>
+          <label>3. Date of Birth</label>
           <input
             type="date"
             value={form.dob}
@@ -50,7 +50,7 @@ const Form = () => {
           />
         </div>
         <div>
-          <label>Contact No</label>
+          <label>4. Contact No</label>
           <input
             type="text"
             value={form.contact}

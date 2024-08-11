@@ -10,15 +10,19 @@
   margin-bottom: 10px;
   cursor: pointer;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 10px;
   transition: background-color 0.3s;
   display: flex;
   align-items: center;
 }
 
+.empty-template{
+  height: 100px;
+}
+
 .img-box{
-  width: 60px !important;
-  height: 60px;
+  width: 120px !important;
+  height: 100px;
   background-color: #f0f0f0;
   border-radius: 5px;
 }
@@ -35,7 +39,7 @@
 }
 
 .content-box p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .template:hover {
@@ -43,6 +47,11 @@
 }
 
 .template.selected {
-  background-color: #007bff;
-  color: white;
+  /* background-color: #1A8FE64D; */
+  border: 2px solid #1A8FE64D;
+  /* color: white; */
+}
+
+.template.selected .img-box{
+  background-color: #1A8FE64D;
 }

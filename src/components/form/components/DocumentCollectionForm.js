@@ -74,10 +74,6 @@ const DocumentCollectionForm = () => {
   return (
     <div className="document-collection-form-container">
       <form className="document-collection-form">
-        <h3>Name of the Enquiry Form</h3>
-        <p>One line description of the form</p>
-        <p>Provide the following information to process your application</p>
-
         {renderFileInput("1. 10th Marksheet", "tenthMarksheet", true)}
         {renderFileInput("2. 12th Marksheet", "twelfthMarksheet", true)}
         {renderFileInput(

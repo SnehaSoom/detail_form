@@ -5,6 +5,19 @@ const Navigation = ({ selectedTemplate, onSelect }) => {
   return (
     <div className="navigation">
       <div
+        className={`template`}
+        // onClick={() => onSelect('details')}
+      >
+        <div className='img-box'></div>
+        <div className='content-box'>
+          <h4>New Form</h4>
+          <p>Start creating a new form with the wide options of fields available</p>
+        </div>
+      </div>
+      <div>
+        <p>Explore the following Templates:</p>
+      </div>
+      <div
         className={`template ${selectedTemplate === 'details' ? 'selected' : ''}`}
         onClick={() => onSelect('details')}
       >
@@ -44,6 +57,11 @@ const Navigation = ({ selectedTemplate, onSelect }) => {
           <h4>Interview Availability</h4>
           <p>Start creating a new form with the wide options of fields available.</p>
         </div>
+
+      </div>
+      <div
+        className={`empty-template`}
+      >
 
       </div>
     </div >

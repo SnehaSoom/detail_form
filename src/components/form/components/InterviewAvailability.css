@@ -1,0 +1,78 @@
+.interview-container{
+  /* padding: 30px; */
+}
+
+
+
+input, select {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="text"]#location {
+  position: relative;
+  padding-left: 40px; /* Add space for the search icon */
+  background-color: white; /* Ensure the input background is white */
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"%3E%3Cg fill="none" stroke="%23888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"%3E%3Ccircle cx="11" cy="11" r="8"/%3E%3Cpath d="M21 21l-4.35-4.35"/%3E%3C/g%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 18px 18px;
+}
+
+input[type="text"]#location::placeholder {
+  color: #888;
+}
+
+input[type="text"]#location:focus {
+  outline: none;
+  border-color: #888;
+}
+
+
+input[type="time"] {
+  width: 50%;
+  appearance: none; /* Removes the default styling */
+  -webkit-appearance: none;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"%3E%3Cg fill="none" stroke="%23888888" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"%3E%3Ccircle cx="12" cy="12" r="9"/%3E%3Cpath d="M11 8v5h5"/%3E%3C/g%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px 20px;
+}
+
+
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.next-button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #3e8e41;
+}

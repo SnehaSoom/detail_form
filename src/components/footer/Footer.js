@@ -4,7 +4,7 @@ import './Footer.css';
 const Footer = ({ onNext }) => {
   return (
     <footer className="footer">
-      <button type="button" className="next-button" onClick={onNext}>
+      <button type="button" className="next2-button" onClick={onNext}>
         Next
       </button>
     </footer>
