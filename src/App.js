@@ -45,13 +45,13 @@ const App = () => {
   const handleNext = () => {
     if (isFormValid) {
       setCurrentStep((prevStep) => prevStep + 1);
-      if (currentStep == 1) {
+      if (currentStep === 1) {
         setSelectedForm('document')
       }
-      if (currentStep == 2) {
+      if (currentStep === 2) {
         setSelectedForm('statement')
       }
-      if (currentStep == 3) {
+      if (currentStep === 3) {
         setSelectedForm('interview')
       }
       console.log('Moving to the next step...', selectedForm);
